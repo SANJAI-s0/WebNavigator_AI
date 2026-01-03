@@ -72,7 +72,7 @@ This is **not** a simple Selenium bot — it is a **thinking web agent**.
 ## 🏗 Project Structure (Updated)
 
 ```text
-WebNavigator_AI/
+SentinelWeb_AI/
 │
 ├── .github/                         # GitHub configuration & automation
 │   ├── ISSUE_TEMPLATE/              # Standardized issue templates
@@ -156,8 +156,8 @@ WebNavigator_AI/
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/SANJAI-s0/WebNavigator_AI.git
-cd WebNavigator_AI
+git clone https://github.com/SANJAI-s0/SentinelWeb_AI.git
+cd SentinelWeb_AI
 ```
 
 ### 2. Create Virtual Environment
