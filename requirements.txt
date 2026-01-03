@@ -1,6 +1,0 @@
-langgraph==0.2.38
-langchain-ollama==0.2.0
-playwright==1.48.0
-flask==3.0.3
-vosk==0.3.45
-pyaudio==0.2.14
