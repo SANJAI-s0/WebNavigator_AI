@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebNavigator AI — Selenium Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #f9f9f9;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        input, button {
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        #dynamic-result {
+            margin-top: 15px;
+            color: green;
+            font-weight: bold;
+        }
+
+        a {
+            display: block;
+            margin-top: 8px;
+            color: #0066cc;
+        }
+    </style>
+
+    <script>
+        function showDynamicResult() {
+            const input = document.getElementById("searchInput").value;
+            document.getElementById("dynamic-result").innerText =
+                "You searched for: " + input;
+        }
+    </script>
+</head>
+<body>
+
+<h1>WebNavigator AI — Selenium Test Page</h1>
+
+<div class="box">
+    <h2>1️⃣ Input Test</h2>
+    <input
+        id="searchInput"
+        name="q"
+        type="text"
+        placeholder="Type something here"
+    />
+    <button id="submitBtn" onclick="showDynamicResult()">
+        Submit
+    </button>
+
+    <div id="dynamic-result"></div>
+</div>
+
+<div class="box">
+    <h2>2️⃣ Clickable Links (Agent Selection)</h2>
+
+    <a href="https://example.com/docs" id="docsLink">
+        Example Docs
+    </a>
+
+    <a href="https://example.com/tutorial" id="tutorialLink">
+        Example Tutorial
+    </a>
+
+    <a href="https://github.com/example/repo" id="githubLink">
+        GitHub Repository
+    </a>
+</div>
+
+<div class="box">
+    <h2>3️⃣ Hidden / Dynamic Content</h2>
+
+    <button
+        id="revealBtn"
+        onclick="document.getElementById('hiddenContent').style.display='block'"
+    >
+        Reveal Hidden Content
+    </button>
+
+    <div
+        id="hiddenContent"
+        style="display:none; margin-top:10px; color:#d63384;"
+    >
+        🎯 Hidden content revealed!
+    </div>
+</div>
+
+</body>
+</html>

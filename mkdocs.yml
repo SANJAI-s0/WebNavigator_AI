@@ -1,0 +1,17 @@
+site_name: WebNavigator AI
+site_description: AI-driven web automation agents
+site_url: https://YOUR_USERNAME.github.io/WebNavigator_AI
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.expand
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Architecture: architecture.md
+  - Installation: installation.md
+  - Usage: usage.md
+  - API: api.md

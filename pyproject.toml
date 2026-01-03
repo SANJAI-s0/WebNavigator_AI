@@ -1,0 +1,88 @@
+[build-system]
+requires = ["setuptools>=69.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+# ---------------------------------------------------------------------
+# Project Metadata
+# ---------------------------------------------------------------------
+[project]
+name = "webnavigator-ai"
+version = "0.1.0"
+description = "Agent-based web automation framework with Selenium, real-time search, and AI verification"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+
+authors = [
+  { name = "Sanjai" }
+]
+
+keywords = [
+  "ai-agent",
+  "selenium",
+  "web-automation",
+  "browser-automation",
+  "streamlit",
+  "ai",
+  "agents",
+  "search"
+]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Internet :: WWW/HTTP :: Browsers",
+  "Framework :: Streamlit"
+]
+
+# ---------------------------------------------------------------------
+# Runtime Dependencies
+# ---------------------------------------------------------------------
+dependencies = [
+  "selenium>=4.18.0",
+  "webdriver-manager>=4.0.1",
+  "requests>=2.31.0",
+  "python-dotenv>=1.0.1",
+  "streamlit>=1.31.0",
+  "tenacity>=8.2.3",
+]
+
+# ---------------------------------------------------------------------
+# Optional / Dev Dependencies
+# ---------------------------------------------------------------------
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.4.4",
+  "pytest-mock>=3.12.0",
+  "pytest-cov>=4.1.0",
+  "ruff>=0.2.2",
+]
+
+# ---------------------------------------------------------------------
+# URLs (Badges, PyPI, Docs, Source)
+# ---------------------------------------------------------------------
+[project.urls]
+Homepage = "https://github.com/YOUR_USERNAME/WebNavigator_AI"
+Repository = "https://github.com/YOUR_USERNAME/WebNavigator_AI"
+Documentation = "https://YOUR_USERNAME.github.io/WebNavigator_AI"
+Issues = "https://github.com/YOUR_USERNAME/WebNavigator_AI/issues"
+
+# ---------------------------------------------------------------------
+# Package Discovery
+# ---------------------------------------------------------------------
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["webnavigator_ai*"]
+
+# ---------------------------------------------------------------------
+# Pytest Configuration
+# ---------------------------------------------------------------------
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q"
+testpaths = ["tests"]

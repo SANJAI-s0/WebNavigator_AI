@@ -1,0 +1,9 @@
+<svg width="420" height="120" viewBox="0 0 420 120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="420" height="120" rx="16" fill="#0f172a"/>
+  <text x="30" y="70" font-size="36" fill="#38bdf8" font-family="Segoe UI, sans-serif">
+    🧭 SentinelWeb AI
+  </text>
+  <text x="32" y="98" font-size="14" fill="#e5e7eb" font-family="Segoe UI, sans-serif">
+    Intelligent Web Navigation Agents
+  </text>
+</svg>
